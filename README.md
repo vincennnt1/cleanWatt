@@ -108,6 +108,10 @@ uv run python -m cleanwatt.model       # retrain all 24 models
 uv run pytest
 ```
 
+## Live Demo
+
+Try the live dashboard → [cleanwatt.streamlit.app](https://cleanwatt-ik2xgubtzhbwj3qvqwpv9f.streamlit.app/)
+
 ## Caveats
 
 - **Emission factors are a choice.** Values follow the Electricity Maps methodology; documented in `carbon.py`.

@@ -182,7 +182,7 @@ with tab_forecast:
         start_label = _hour_label(w["start_h"], now_ontario)
         end_label = _hour_label(w["end_h"] + 1, now_ontario)
         avg_ci = w["avg_intensity"]
-        pct_delta = (current - avg_ci) / current * 100 if current > 0 else 0.0
+        pct_delta = (avg_ci - current) / current * 100 if current > 0 else 0.0
 
         with preset_cols[i]:
             st.markdown(f"**{preset['name']}** ({preset['hours']:.4g}h)")

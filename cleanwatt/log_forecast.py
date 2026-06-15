@@ -169,6 +169,7 @@ def run() -> None:
         existing = pd.read_parquet(FORECAST_LOG_PATH)
         existing["forecast_made_at"] = pd.to_datetime(existing["forecast_made_at"], utc=True)
         existing["target_hour"] = pd.to_datetime(existing["target_hour"], utc=True)
+        existing["actual_gco2"] = pd.to_numeric(existing["actual_gco2"], errors="coerce")
         log_df = pd.concat([existing, new_rows], ignore_index=True)
     else:
         log_df = new_rows

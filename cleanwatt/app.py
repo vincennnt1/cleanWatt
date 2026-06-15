@@ -294,6 +294,7 @@ with tab_accuracy:
 
     if FORECAST_LOG_PATH.exists():
         log_df = pd.read_parquet(FORECAST_LOG_PATH)
+        log_df["actual_gco2"] = pd.to_numeric(log_df["actual_gco2"], errors="coerce")
         log_df["abs_error"] = (log_df["predicted_gco2"] - log_df["actual_gco2"]).abs()
         log_df["date"] = pd.to_datetime(log_df["forecast_made_at"]).dt.date
         rolling = (

@@ -1,0 +1,122 @@
+{
+  "1": {
+    "mae_model": 4.9761,
+    "mae_baseline": 21.7598,
+    "skill": 0.7713
+  },
+  "2": {
+    "mae_model": 7.8112,
+    "mae_baseline": 21.7581,
+    "skill": 0.641
+  },
+  "3": {
+    "mae_model": 9.7987,
+    "mae_baseline": 21.7571,
+    "skill": 0.5496
+  },
+  "4": {
+    "mae_model": 11.2345,
+    "mae_baseline": 21.7564,
+    "skill": 0.4836
+  },
+  "5": {
+    "mae_model": 12.4052,
+    "mae_baseline": 21.756,
+    "skill": 0.4298
+  },
+  "6": {
+    "mae_model": 13.4533,
+    "mae_baseline": 21.7554,
+    "skill": 0.3816
+  },
+  "7": {
+    "mae_model": 14.3584,
+    "mae_baseline": 21.7557,
+    "skill": 0.34
+  },
+  "8": {
+    "mae_model": 15.0942,
+    "mae_baseline": 21.7578,
+    "skill": 0.3063
+  },
+  "9": {
+    "mae_model": 15.5842,
+    "mae_baseline": 21.7602,
+    "skill": 0.2838
+  },
+  "10": {
+    "mae_model": 15.9637,
+    "mae_baseline": 21.7625,
+    "skill": 0.2665
+  },
+  "11": {
+    "mae_model": 16.3245,
+    "mae_baseline": 21.7654,
+    "skill": 0.25
+  },
+  "12": {
+    "mae_model": 16.7426,
+    "mae_baseline": 21.7684,
+    "skill": 0.2309
+  },
+  "13": {
+    "mae_model": 17.0199,
+    "mae_baseline": 21.7715,
+    "skill": 0.2182
+  },
+  "14": {
+    "mae_model": 17.386,
+    "mae_baseline": 21.7735,
+    "skill": 0.2015
+  },
+  "15": {
+    "mae_model": 17.7431,
+    "mae_baseline": 21.776,
+    "skill": 0.1852
+  },
+  "16": {
+    "mae_model": 17.9736,
+    "mae_baseline": 21.7778,
+    "skill": 0.1747
+  },
+  "17": {
+    "mae_model": 17.8508,
+    "mae_baseline": 21.7798,
+    "skill": 0.1804
+  },
+  "18": {
+    "mae_model": 17.9537,
+    "mae_baseline": 21.7817,
+    "skill": 0.1757
+  },
+  "19": {
+    "mae_model": 17.7961,
+    "mae_baseline": 21.7836,
+    "skill": 0.183
+  },
+  "20": {
+    "mae_model": 17.6399,
+    "mae_baseline": 21.7859,
+    "skill": 0.1903
+  },
+  "21": {
+    "mae_model": 17.4729,
+    "mae_baseline": 21.788,
+    "skill": 0.1981
+  },
+  "22": {
+    "mae_model": 17.4509,
+    "mae_baseline": 21.79,
+    "skill": 0.1991
+  },
+  "23": {
+    "mae_model": 17.5278,
+    "mae_baseline": 21.7925,
+    "skill": 0.1957
+  },
+  "24": {
+    "mae_model": 17.7711,
+    "mae_baseline": 21.7946,
+    "skill": 0.1846
+  }
+}

@@ -15,8 +15,8 @@ CLAUDE.md
 # Pytest cache
 .pytest_cache/
 
-# Generated data — forecast log excluded; processed/ committed for lag features
-data/forecast_log.parquet
+# Generated data — forecast_log committed so cron can append to it
+!data/forecast_log.parquet
 
 # eval_metrics.json is small and worth keeping; .pkl committed for Streamlit Cloud
 

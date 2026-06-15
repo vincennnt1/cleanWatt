@@ -250,17 +250,20 @@ with tab_accuracy:
                 )
                 .properties(title="Error by forecast horizon", height=280)
             )
+            skill_df = metrics_df.reset_index().rename(
+                columns={"Skill vs. yesterday": "Skill", "MAE (gCO₂/kWh)": "MAE"}
+            )
             skill_chart = (
-                alt.Chart(metrics_df.reset_index())
-                .mark_line(point=True, color="#27ae60")
+                alt.Chart(skill_df)
+                .mark_bar(color="#27ae60")
                 .encode(
                     x=alt.X("Horizon:Q", title="Forecast horizon (hours ahead)"),
                     y=alt.Y(
-                        "Skill vs. yesterday:Q",
+                        "Skill:Q",
                         title="Skill score (↑ better)",
                         scale=alt.Scale(zero=False),
                     ),
-                    tooltip=["Horizon:Q", "MAE (gCO₂/kWh):Q", "Skill vs. yesterday:Q"],
+                    tooltip=["Horizon:Q", "MAE:Q", "Skill:Q"],
                 )
                 .properties(title="Skill vs. yesterday baseline", height=280)
             )

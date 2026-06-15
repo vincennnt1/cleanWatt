@@ -54,7 +54,7 @@ Notable: skill doesn't collapse monotonically — dips around h=15–16 then rec
 | Weather | `openmeteo-requests` (free, no key) |
 | Modeling | `lightgbm`, `scikit-learn` |
 | Dashboard | `streamlit`, `altair` |
-| Storage | Parquet (canonical), DuckDB (EDA queries) |
+| Storage | Parquet |
 | Package manager | `uv` |
 
 ---

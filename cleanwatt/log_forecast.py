@@ -47,8 +47,9 @@ def refresh_carbon_series() -> None:
     Preserves full history — only new/updated rows are written.
     """
     start = (pd.Timestamp.now(tz="UTC") - pd.Timedelta(days=3)).date().isoformat()
-    logger.info("Fetching IESO data from %s...", start)
-    new_rows = build_carbon_series(start, None)
+    end = (pd.Timestamp.now(tz="UTC") + pd.Timedelta(days=1)).date().isoformat()
+    logger.info("Fetching IESO data from %s to %s...", start, end)
+    new_rows = build_carbon_series(start, end)
 
     if CARBON_PATH.exists():
         existing = pd.read_parquet(CARBON_PATH)

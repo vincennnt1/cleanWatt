@@ -3,8 +3,8 @@ services:
     name: cleanwatt-api
     runtime: python
     plan: free
-    buildCommand: pip install uv && uv sync --no-dev --frozen
-    startCommand: .venv/bin/uvicorn api.index:app --host 0.0.0.0 --port $PORT
+    buildCommand: pip install -e .
+    startCommand: uvicorn api.index:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: PYTHON_VERSION
         value: "3.13.0"
